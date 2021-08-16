@@ -1,0 +1,807 @@
+body {
+  margin: 0;
+  background: #f5f6fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: RubikBold;
+  src: url("./fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: RubikExtraBold;
+  src: url("./fonts/Rubik-ExtraBold.ttf");
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: RubikBold, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  background: #4857ec;
+  border-radius: 3px;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  display: block;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: red;
+  transition: 0.5s;
+}
+
+header .container {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo a {
+    font-family: RubikExtraBold, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 25px;
+    color: #000000;
+    max-width: 100px;
+    margin-right: 340px;
+  }
+  .actions {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      text-decoration: none;
+      border-bottom: 4px solid transparent;
+    }
+    a:hover,
+    a.active {
+      border-bottom: 4px solid #ff3344;
+    }
+  }
+}
+
+main .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  #scene {
+    align-self: flex-end;
+    margin-right: 60px;
+  }
+
+  h1 {
+    font-family: RubikBold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 65px;
+    color: #000000;
+    max-width: 390px;
+    margin: 130px 0 26px 0;
+  }
+  h3 {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    max-width: 305px;
+    margin-bottom: 32px;
+  }
+
+  .mainCircle {
+    position: absolute;
+    top: -75px;
+    right: 0px;
+  }
+  .redCircle {
+    position: absolute;
+    right: 0;
+    bottom: 160px;
+  }
+  .miniRedCircle {
+    position: absolute;
+    bottom: 125px;
+    right: 600px;
+  }
+  .yellowCircle {
+    position: absolute;
+    top: -30px;
+    left: 300px;
+  }
+  .greenCircle {
+    position: absolute;
+    top: -10px;
+    left: 470px;
+  }
+  .blueCircle {
+    position: absolute;
+    top: 250px;
+    left: 540px;
+  }
+
+  .gamepad {
+    position: absolute;
+    bottom: -215px;
+    right: 110px;
+  }
+}
+
+.brands .container {
+  margin-top: 80px;
+  padding-bottom: 175px;
+  h2 {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #8a94a6;
+    margin-bottom: 45px;
+  }
+  .brandsBlock {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .brand {
+    opacity: 0.82;
+  }
+
+  .brand:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.features .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  .featuresDescription {
+    .featuresLogo {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.3em;
+      color: #4857ec;
+      margin-bottom: 24px;
+    }
+    .featuresTitle {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 45px;
+      color: #000000;
+      max-width: 290px;
+    }
+    .featuresWords {
+      max-width: 345px;
+      margin-top: 24px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+    }
+  }
+
+  .featuresItems {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    flex-wrap: wrap;
+    max-width: 570px;
+    .itemCard {
+      max-width: 235px;
+      .itemTitle {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 45px;
+        color: #000000;
+        margin-top: 10px;
+      }
+      .itemText {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #98a1bb;
+        margin-bottom: 72px;
+      }
+    }
+  }
+}
+
+.portfolio .container {
+  text-align: center;
+
+  .portfolioTitle {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    color: #4857ec;
+  }
+  .portfolioSecondTitle {
+    margin-top: 24px;
+    margin-bottom: 70px;
+    font-family: RubikBold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 45px;
+    color: #000000;
+  }
+  .btn {
+    margin-top: 76px;
+  }
+  .portfolioItems {
+    display: flex;
+    justify-content: space-between;
+    .portfolioIMG {
+      border-radius: 15px;
+    }
+    .portfolioItemContent {
+      padding-top: 15px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .portfolioItemTitle {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 45px;
+        color: #000000;
+        text-align: left;
+      }
+      .portfolioItemText {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #98a1bb;
+        max-width: 235px;
+        text-align: left;
+        margin-top: 4px;
+      }
+      .portfolioItemBtn,
+      .portfolioItemBtn.active:hover {
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #f9c94e;
+        box-sizing: border-box;
+        background: transparent;
+        border-radius: 5px;
+        position: relative;
+      }
+      .portfolioItemBtn::after,
+      .portfolioItemBtn.active:hover::after {
+        content: url("./images/yellowArrow.png");
+        position: absolute;
+        top: 7px;
+        left: 9px;
+      }
+      .portfolioItemBtn.active,
+      .portfolioItemBtn:hover {
+        background: #f9c94e;
+      }
+
+      .portfolioItemBtn.active::after,
+      .portfolioItemBtn:hover::after {
+        content: url("./images/whiteArrow.png");
+        position: absolute;
+        top: 7px;
+        left: 9px;
+      }
+    }
+  }
+}
+
+.comments .container {
+  .commentsTitle {
+    margin-top: 183px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    color: #4857ec;
+    margin-bottom: 24px;
+  }
+  .commentsSecondTitle {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 45px;
+    color: #000000;
+  }
+}
+
+.seeAll {
+  display: block;
+  margin: 0 auto;
+  font-family: RubikBold, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4857ec;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  img {
+    margin-left: 15px;
+    vertical-align: middle;
+  }
+}
+
+.seeAll:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.team .container {
+  padding-top: 166px;
+  .team {
+    margin-bottom: 24px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    color: #4857ec;
+  }
+  .meetOurTeam {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 45px;
+    margin-bottom: 47px;
+    color: #000000;
+  }
+  .teamCards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 66px;
+    .teamCard {
+      text-align: center;
+      margin: 0 10px;
+      img {
+        border-radius: 15px;
+      }
+      .fullName {
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 45px;
+        color: #000000;
+        margin-top: 8px;
+        margin-bottom: 4px;
+      }
+      .teamPosition {
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #98a1bb;
+      }
+    }
+  }
+}
+
+footer {
+  background: #ffffff;
+  .container {
+    margin-top: 107px;
+    padding-top: 145px;
+    display: flex;
+    justify-content: space-between;
+    .logoBlock {
+      .logo {
+        font-family: RubikExtraBold, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 25px;
+        color: #000000;
+        margin-right: 340px;
+      }
+    }
+    .linksBlock {
+      display: flex;
+      justify-content: space-between;
+      width: 740px;
+      .groupLinks {
+        margin-left: 10px;
+        margin-right: 10px;
+        .groupLinksName {
+          font-family: Rubik, sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          color: #000000;
+          margin-bottom: 17px;
+        }
+        .link {
+          text-decoration: none;
+          font-family: Rubik;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          color: #aab2c8;
+          display: block;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .link:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.dribbble svg,
+facebook svg path,
+.twitter svg,
+.youtube svg {
+  fill: #b0b7c3;
+}
+.dribbble:hover svg {
+  fill: #ff3344;
+}
+
+.facebook:hover svg path {
+  fill: blue;
+}
+
+.twitter:hover svg {
+  fill: blue;
+}
+
+.youtube:hover svg {
+  fill: red;
+}
+.games {
+  position: relative;
+  display: inline-block;
+}
+.games::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 178px;
+  bottom: -2px;
+  right: 5px;
+  background: #ff3344;
+  border-radius: 5px;
+}
+svg:hover {
+  cursor: pointer;
+}
+
+.footerContainer {
+  display: block;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  .icons {
+    display: flex;
+    margin-top: 4px;
+    justify-content: space-between;
+    width: 275px;
+    .icon {
+      height: 50px;
+      width: 50px;
+      background: #fafbfc;
+      border-radius: 10px;
+    }
+  }
+  .rights {
+    margin-top: 62px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8a94a6;
+    padding-bottom: 88px;
+  }
+}
+
+.pricing .container {
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-family: RubikBold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 73px;
+    text-align: center;
+    color: #000000;
+  }
+  h2 {
+    font-family: Rubik-Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #98a1bb;
+    margin-bottom: 34px;
+  }
+  label {
+    transition: all 0.5s;
+    position: relative;
+    vertical-align: middle;
+    font-family: Rubik-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #98a1bb;
+    input {
+      display: none;
+    }
+    span {
+      margin-left: 55px;
+      margin-right: 55px;
+    }
+  }
+  label::after {
+    content: "";
+    transition: 0.3s;
+    width: 90px;
+    height: 41px;
+    background: #2fefb1;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: -10px;
+    right: calc(50% - 45px);
+    border-radius: 25px;
+  }
+  label.monthly::after {
+    background: #4857ec;
+  }
+  label::before {
+    content: "";
+    transition: 0.6s;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    top: -5px;
+    right: 52%;
+  }
+  label.monthly::before {
+    right: 41%;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 50px;
+  height: 100%;
+}
+
+.slideBody {
+  max-width: 460px;
+}
+
+.swiper-slide {
+  padding: 33px 22px 32px 26px;
+  box-sizing: border-box;
+  .titleContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nameAndPosition {
+      max-width: 160px;
+      .name {
+        font-family: RubikBold, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        color: #000000;
+      }
+      .position {
+        margin-top: 5px;
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #98a1bb;
+      }
+    }
+  }
+  .textContent {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 23px;
+  }
+}
+
+.sliderContainer {
+  overflow: hidden;
+  filter: blur();
+  .container {
+    filter: none;
+    .swiper-container {
+      overflow: visible;
+    }
+  }
+}
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-next {
+  filter: none;
+}
+.swiper-slide {
+  filter: blur(1px);
+}
+
+.swiper-button-prev {
+  top: 0%;
+  left: 82%;
+}
+
+.swiper-button-next {
+  top: 0.7%;
+  left: 85%;
+}
+
+.swiper-button-next::after {
+  content: url("./images/buttonSlider.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.swiper-button-prev::after {
+  content: url("./images/buttonSlider.png");
+  position: absolute;
+  transform: rotate(180deg);
+  top: 0;
+  right: 0;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+  filter: grayscale();
+}
+
+.sliderContainer {
+  padding-top: 95px;
+}
+#burger {
+  display: none;
+}
+
+.cards .cardsContainer {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .card {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 37px 28px 28px;
+    background: #fff;
+    border-radius: 10px;
+    .cardTitle {
+      font-family: RubikBold, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .cardPrice {
+      font-family: RubikBold, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 73px;
+      color: #000000;
+    }
+    .cardPeriod {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #8a94a6;
+      margin-top: 10px;
+      margin-bottom: 45px;
+    }
+    ul {
+      height: 200px;
+      margin-bottom: 35px;
+      li {
+        max-width: 192px;
+        margin-bottom: 25px;
+        font-family: Rubik-Regular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #8a94a6;
+        list-style-type: none;
+        position: relative;
+      }
+      .li::after{
+        content: url("./images/LI.png");
+        position: absolute;
+        left: -40px;
+        top: -1px;
+      }
+    }
+  }
+  .cardOne .cardTitle {
+    color: #f9c94e;
+  }
+  .cardTwo .cardTitle {
+    color: #4857ec;
+  }
+  .cardThree .cardTitle {
+    color: #2fefb1;
+  }
+}
+
+@import "adaptive.less";

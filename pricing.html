@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pricing</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet/less" type="text/css" href="main.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><a href="index.html">play_</a></div>
+        <div class="actions">
+          <a href="index.html">Home</a>
+          <a href="#">Services</a>
+          <a href="#" class="active">Pricing</a>
+          <a href="#">About</a>
+        </div>
+        <button class="btn headerBtn">Contact us</button>
+      </div>
+    </header>
+
+    <div class="pricing">
+      <div class="container">
+        <h1>Customizable plans and pricing</h1>
+        <h2>Choose the plan that suits you best</h2>
+        <div class="bill">
+          <label for="bill" id="labelBill">
+            <span class="monthly">Bill Monthly</span>
+            <input type="checkbox" name="bill" id="bill" />
+            <span class="anually">Bill Anually</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="cardsContainer">
+        <div class="card cardOne">
+          <div class="cardTitle">Basic</div>
+          <div class="cardPrice">$99.99</div>
+          <div class="cardPeriod">Per Year</div>
+          <ul>
+            <li class="li">Social media contents</li>
+            <li class="li">Game reports</li>
+          </ul>
+          <button class="btn">Get Started</button>
+        </div>
+        
+        <div class="card cardTwo">
+          <div class="cardTitle">Standard</div>
+          <div class="cardPrice">$99.99</div>
+          <div class="cardPeriod">Per Year</div>
+          <ul>
+            <li class="li">Social media contents</li>
+            <li class="li">Game reports</li>
+            <li class="li">Brand strategy</li>
+          </ul>
+          <button class="btn">Get Started</button>
+        </div>
+        
+        <div class="card cardThree">
+          <div class="cardTitle">Premium</div>
+          <div class="cardPrice">$99.99</div>
+          <div class="cardPeriod">Per Year</div>
+          <ul>
+            <li class="li">Website design</li>
+            <li class="li">Social media contents</li>
+            <li class="li">Game launch
+              announchments</li>
+            <li class="li">Game reports</li>
+          </ul>
+          <button class="btn">Get Started</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <script>
+      const bill = document.getElementById("bill");
+      const labelBill = document.getElementById("labelBill");
+
+      bill.addEventListener("click", () => {
+        if (bill.checked) {
+          labelBill.classList.add("monthly");
+        } else {
+          labelBill.classList.remove("monthly")
+        }
+      });
+    </script>
+  </body>
+</html>
